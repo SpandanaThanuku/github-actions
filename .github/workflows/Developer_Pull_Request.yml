@@ -1,0 +1,25 @@
+name: Developer_Pull_Request
+on: [workflow_call]
+
+jobs:
+  CI_Steps:
+    runs-on: self-hosted
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Unit Tests
+        run: echo Unit Tests
+
+      - name: Integration Tests
+        run: echo Integration Tests
+
+      - name: SAST Scans
+        run: echo SAST Scans
+
+      - name: Detect Secrets in Source Code
+        run: echo Detect Secrets in Source Code
+
+      - name: Code Quality
+        run: echo Code Quality
+
