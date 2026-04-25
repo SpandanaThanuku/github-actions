@@ -1,11 +1,5 @@
 name: Developer_branch_CI
-on:
-  workflow_call:
-    secrets:
-      SONAR_USER:
-        required: true
-      SONAR_PASS:
-        required: true
+on: [workflow_call]
 
 jobs:
   CI_Steps:
