@@ -23,9 +23,8 @@ jobs:
         run: echo Detect Secrets in Source Code
 
       - name: checking dependencies for running npm install
-        if: inputs.service_name == backend
-        run:
-          npm install
+        if: inputs.service_name == 'expense-backend'
+        run: npm install
 
       - name: Produce Artifact
         env:
